@@ -34,7 +34,7 @@ function Notes({ notes }) {
                     placeholder='Начинайте вводить...'
                 />}
                 <button className='btn' onClick={() => setShowSearch(prevState => !prevState)}>
-                    {showSearch ? <MdClose /> : <CiSearch />}
+                    {showSearch ? 'X' : <CiSearch />}
                 </button>
             </header>
             <div className="notes__container">
