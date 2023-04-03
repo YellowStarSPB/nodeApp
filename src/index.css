@@ -37,7 +37,7 @@ body {
     transition: all 300ms ease;
 }
 
-.btn svg {
+.btn img {
     display: block;
     width: 100%;
     height: 100%;
@@ -162,6 +162,7 @@ h2 {
     bottom: 4rem;
     right: 7rem;
     padding: 1rem;
+    font-size: 30px;
 }
 
 

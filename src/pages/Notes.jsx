@@ -1,7 +1,7 @@
 import React from 'react'
-import { CiSearch } from 'react-icons/ci'
+
 import { BsPlusLg } from 'react-icons/bs'
-import { MdClose } from 'react-icons/md'
+
 import { Link } from 'react-router-dom'
 
 
@@ -34,7 +34,7 @@ function Notes({ notes }) {
                     placeholder='Начинайте вводить...'
                 />}
                 <button className='btn' onClick={() => setShowSearch(prevState => !prevState)}>
-                    {showSearch ? 'X' : <CiSearch />}
+                    {showSearch ? <img src="/close.svg" alt="close" /> : <img src='/search.svg' alt='search'/>}
                 </button>
             </header>
             <div className="notes__container">
@@ -42,7 +42,7 @@ function Notes({ notes }) {
                 {filteredNotes.map(note => <NoteItem key={note.id} note={note}
                 />)}
             </div>
-            <Link to='/create-note' className='btn add__btn' ><BsPlusLg /></Link>
+            <Link to='/create-note' className='btn add__btn' ><img src="/plus.svg" alt="add" /></Link>
         </section>
     )
 }
