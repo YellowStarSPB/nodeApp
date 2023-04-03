@@ -27,7 +27,7 @@ function CreateNote({ setNotes }) {
     return (
         <section>
             <header className="create-note__header">
-                <Link to='/' className="btn"><IoIosArrowBack /></Link>
+                <Link to='/' className="btn"><img src="/arrow.png" alt="back" /></Link>
                 <button className="btn lg primary" onClick={handleSubmit}>Сохранить</button>
             </header>
             <form className="create-note__form" onSubmit={handleSubmit}>
